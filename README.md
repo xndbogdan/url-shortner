@@ -47,6 +47,10 @@ for the endpoint:
 repository with us. Make sure the repository is public.
 14. Laravel scaffolding is welcomed (and encouraged).
 
+## Concerns
+
+- Using a random 5 letter string for the url slugs might lead to collisions
+
 ## Personal goals
 
 - Stick as close as possible to PSR-12
