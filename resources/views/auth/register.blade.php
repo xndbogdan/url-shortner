@@ -17,7 +17,7 @@
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700"> Name </label>
                         <div class="mt-1">
-                            <input id="name" type="text" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm @error('name')  border-red-500 @enderror"
+                            <input id="name" type="text" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm @error('name')  border-red-500 @enderror"
                                 name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                         </div>
 
@@ -32,7 +32,7 @@
                         <label for="email" class="block text-sm font-medium text-gray-700"> Email address </label>
                         <div class="mt-1">
                             <input id="email" type="email"
-                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm @error('email') border-red-500 @enderror" name="email"
+                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm @error('email') border-red-500 @enderror" name="email"
                                 value="{{ old('email') }}" required autocomplete="email">
                         </div>
 
@@ -49,7 +49,7 @@
                         </label>
                         <div class="mt-1">
                             <input id="password" type="password"
-                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm @error('password') border-red-500 @enderror" name="password"
+                                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm @error('password') border-red-500 @enderror" name="password"
                                 required autocomplete="new-password">
                         </div>
 
@@ -65,7 +65,7 @@
                             {{ __('Confirm Password') }}:
                         </label>
                         <div class="mt-1">
-                            <input id="password-confirm" type="password" class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            <input id="password-confirm" type="password" class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                 name="password_confirmation" required autocomplete="new-password">
                         </div>
                     </div>
