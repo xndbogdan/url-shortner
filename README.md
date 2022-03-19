@@ -30,18 +30,18 @@ appended to the model whenever it is retrieved.
 provided then it should return a validation error. The same is applied for when a non-valid url is provided. Sample of valid payload
 for the endpoint:       
         
-        `{ "destination": "https://google.com"}` 
+        { "destination": "https://google.com"}
 
     Expected json response on success: 
     
-        `{
-        "destination": "https://google.com",
-        "slug": "k9GZw",
-        "updated_at": "2021-09-10T23:52:11.000000Z",
-        "created_at": "2021-09-10T23:52:11.000000Z",
-        "id": 18,
-        "shortened_url": "http://url-shortener.test/k9GZw"
-        }`
+        {
+                "destination": "https://google.com",
+                "slug": "k9GZw",
+                "updated_at": "2021-09-10T23:52:11.000000Z",
+                "created_at": "2021-09-10T23:52:11.000000Z",
+                "id": 18,
+                "shortened_url": "http://url-shortener.test/k9GZw"
+        }
 
 13. Make sure to use a git repository (either bitbucket or github) to store the code of your application. Then share the url of the
 repository with us. Make sure the repository is public.
