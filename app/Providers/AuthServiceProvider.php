@@ -25,9 +25,9 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        Gate::define('show-url', function ($user, $url) {
-            return $user->id === $url->user_id;
-        });
+        // Gate::define('show-url', function ($user, $url) {
+        //     return $user->id === $url->user_id;
+        // });
         Gate::define('edit-url', function ($user, $url) {
             return $user->id === $url->user_id;
         });

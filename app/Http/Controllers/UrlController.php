@@ -35,13 +35,35 @@ class UrlController extends Controller
 
     public function show(Request $request, Url $url)
     {
-        if (! Gate::allows('show-url', $url)) {
-            abort(403);
-        }
+        // if (! Gate::allows('show-url', $url)) {
+        //     abort(403);
+        // }
 
         return view('url.show', [
             'url' => $url,
         ]);
+    }
+
+    public function edit(Request $request, Url $url) {
+        if (! Gate::allows('edit-url', $url)) {
+            abort(403);
+        }
+
+        return view('url.edit', [
+            'url' => $url,
+        ]);
+    }
+
+    public function update(StoreUrlRequest $request, Url $url) {
+        if (! Gate::allows('edit-url', $url)) {
+            abort(403);
+        }
+
+        $url->update([
+            'destination' => $request->input('destination'),
+        ]);
+
+        return redirect()->back();
     }
 
     public function destroy(Url $url)
